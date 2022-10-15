@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/3818c2a1e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="contentContainer" >
+    <div id="background">
+      <form action="submit" name="zipCodeForm">
+        <label for="zipCode" class="form">Enter zip code</label>
+        <input type="text" name='zipCode' class="form" required pattern='[0-9]{5}'/>
+        <button>Get Weather</button>
+        <i id="load" class="fa-solid fa-spinner fa-spin-pulse fa-xl"></i>
+      </form>
+      <section id="weatherInfo">
+      </section>
+    </div>
+  </div>
+</body>
+<script src="bundle.js"></script>
+</html>
