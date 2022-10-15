@@ -6,17 +6,17 @@
   font-weight: 500;
 }
 html{
-  background-color: rgba(103, 103, 152, 0.537);
+  background-color: rgb(152 152 183 / 54%);
 }
 form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
   left: 50vw;
   width: 100%;
   border-radius: 1rem;
-  background-color: #ffffffc2;
+  background-color: rgb(152 152 183 / 54%);
 }
 #background{
   width: fit-content;
@@ -37,6 +37,7 @@ form{
   border-radius: 0.5rem;
   width: 59%;
   text-align: center;
+  padding: 1rem;
 }
 label{
   font-size: 25px;
@@ -50,7 +51,7 @@ button{
   border-radius: 0.5rem;
   margin-bottom: 1.2rem;
   border: none;
-  background-color: rgba(103, 103, 152, 0.537);
+  background-color: rgb(220 220 239);
 }
 button:hover{
   transform: scale(1.2);
@@ -64,7 +65,7 @@ button:hover{
 }
 #weatherInfo{
   margin-top: 1rem;
-  background-color: #ffffffc2;
+  background-color: rgb(152 152 183 / 54%);
   text-align: center;
   width: 100%;
   border-radius: 1rem;
