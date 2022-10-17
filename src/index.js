@@ -65,7 +65,7 @@ const displayWeather = (weather, info, city) => {
   element.className = 'itemContainer'
   let elementT = document.createElement('h3')
   elementT.className = 'weather-item'
-  elementT.innerHTML = `current condition`
+  elementT.innerHTML = `Current Condition`
   let elementD = document.createElement('div')
   elementD.innerHTML = `${weather['weather'][0]['description']}`
   cityContent.appendChild(elementT)
