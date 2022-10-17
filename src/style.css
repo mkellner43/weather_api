@@ -71,14 +71,14 @@ input[type='text']:focus{
   width: 35px;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  position: absolute;
-  left: 53rem;
+  position: relative;
+  left: 1rem;
 }
 button[type='submit'].search{
-  right: 53rem;
+  right: 1rem;
   height: 35px;
   width: 35px;
-  position: absolute;
+  position: relative;
   background-color: orange;
   color: black;
   border-top-right-radius: 1rem ;
