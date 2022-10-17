@@ -8,17 +8,23 @@
   <script src="https://kit.fontawesome.com/3818c2a1e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="contentContainer" >
-    <div id="background">
-      <form action="submit" name="zipCodeForm">
-        <label for="zipCode" class="form">Enter zip code</label>
-        <input type="text" name='zipCode' class="form" required pattern='[0-9]{5}'/>
-        <button>Get Weather</button>
-        <i id="load" class="fa-solid fa-spinner fa-spin-pulse fa-xl"></i>
-      </form>
-      <section id="weatherInfo">
-      </section>
+  <div class="header">
+    <div class="sunIcon">
+      <i class="fa-sharp fa-solid fa-sun fa-2xl slow-spin"></i>
     </div>
+    <h1>Weather Checker</h1>
+    <form action="submit" name="zipCodeForm">
+      <div id="location" class="location"><i class="fa-solid fa-location-pin local"></i></div>
+      <input type="text" name='zipCode' class="form" placeholder="Enter zip code" required pattern='[0-9]{5}'>
+      <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <div>
+      <i id="load" class="fa-solid fa-spinner fa-spin-pulse fa-2xl"></i>
+    </div>
+  </div>
+  <div class="weatherInfoContainer">
+    <section id="weatherInfo">
+    </section>
   </div>
 </body>
 <script src="bundle.js"></script>

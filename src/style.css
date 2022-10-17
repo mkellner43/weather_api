@@ -6,72 +6,133 @@
   font-weight: 500;
 }
 html{
-  background-color: rgb(152 152 183 / 54%);
+  background-color: #f4dbb6;
 }
 form{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   left: 50vw;
   width: 100%;
-  border-radius: 1rem;
-  background-color: rgb(152 152 183 / 54%);
+  color: black;
+  padding-bottom: 4rem;
 }
-#background{
-  width: fit-content;
-  min-width: 50%;
-  padding: 5rem;
-  border-radius: 1rem;
+input::placeholder{
+  color: black;
 }
-.contentContainer{
+.header{
+  padding-top: 3rem;
   width: 100%;
   height: 100%;
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(203, 129, 37);
 }
-.form{
-  margin: 1rem;
-  border-radius: 0.5rem;
-  width: 59%;
-  text-align: center;
+h1{
+  padding: 2rem;
+}
+#load {
+  display: none;
   padding: 1rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 58.5rem;
 }
-label{
-  font-size: 25px;
-}
-input{
-  padding: 0.5rem;
+input[type='text']{
+  width: 200px;
+  height: 35px;
   text-align: center;
+  background-color: inherit;
+  color: black;
+  border-color: orange;
+  border-style: solid;
 }
-button{
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1.2rem;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+input[type='text']:-internal-autofill-selected {
+  background-color: inherit;
+}
+input[type='text']:focus{
+  outline: none;
+  background-color: inherit;
+  color: black;
+}
+.location{
+  background: orange;
+  color: black;
   border: none;
-  background-color: rgb(220 220 239);
+  height: 35px;
+  width: 35px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: absolute;
+  left: 53rem;
 }
-button:hover{
-  transform: scale(1.2);
+button[type='submit'].search{
+  right: 53rem;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  background-color: orange;
+  color: black;
+  border-top-right-radius: 1rem ;
+  border-bottom-right-radius: 1rem;
+  border: none;
 }
 #load{
   display: none;
+  position: absolute;
+  top: 17rem;
+  left: 58.2rem;
 }
 .weather-item{
-  text-align: center;
-  padding: 0.5rem;
+  width: 16rem;
+}
+.rows{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #weatherInfo{
-  margin-top: 1rem;
-  background-color: rgb(152 152 183 / 54%);
+  display: none;
+  flex-direction: column;
+  margin-top: 5rem;
   text-align: center;
-  width: 100%;
+  width: 49%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: white;
   border-radius: 1rem;
 }
 .weather-item-city{
-  font-weight: 600;
-  padding: 0.5rem;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
   text-align: center;
+}
+.local{
+  position: absolute;
+  top: 0.6rem;
+  left: 0.9rem;
+}
+.weatherInfoContainer{
+  display: flex;
+  justify-content: center;
+}
+.itemContainer{
+  padding-bottom: 1rem;
+  font-size: large;
+}
+.sunIcon{
+  color: orange;
+  font-size: 50px;
+}
+.slow-spin{
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
 }
