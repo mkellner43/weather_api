@@ -34,11 +34,11 @@ h1{
   padding: 2rem;
 }
 #load {
-  display: none;
+  display: block;
   padding: 1rem;
   position: absolute;
-  top: 10.5rem;
-  left: 58.5rem;
+  top: 50vh;
+  left: 49vw;
 }
 input[type='text']{
   width: 200px;
