@@ -1,24 +1,4 @@
-import './style.css'
-
-// async function getImg(search){
-//   const background = document.getElementById('background')
-//   try {
-//     const getImg = await fetch(`https://api.pexels.com/v1/search?query=${search}`,{
-//       method: 'GET',
-//       headers: {
-//         Accept: 'application/json',
-//         Authorization: "563492ad6f91700001000001732e787916124d24b441238a3aa6a260"
-//       }
-//     });
-//     const img = await getImg.json();
-//     if(img.staus != '429' && img){
-//       let finalImage = img.photos[1]['src']['landscape']
-//       background.style.backgroundImage = `url('${finalImage}')`
-//     }
-//   } catch(error) {
-//     console.log(error)
-//   }
-// }
+import './style.css';
 
 const getWeather = async (zip=null, position=null) => {
   let loader = document.getElementById('load')
@@ -89,7 +69,6 @@ const displayWeather = (weather, info, city) => {
     }
   }
   info.appendChild(cityContent);
-    // getImg(weather['weather'][0]['description']);
 
   function modifyData(key, object){
     if(key == 'temp'){
@@ -111,11 +90,6 @@ const displayWeather = (weather, info, city) => {
       return [`Pressure`, `${object[key]}<sup>hPa</sup>`]
     }
   }
-
-  
-  // async function changeBackground(search){
-  //   let data = await fetch(``)
-  // }
 };
 
 const listen = (() => {
