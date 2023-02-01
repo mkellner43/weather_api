@@ -34,11 +34,11 @@ h1{
   padding: 2rem;
 }
 #load {
-  display: block;
+  display: none;
   padding: 1rem;
   position: absolute;
   top: 50vh;
-  left: 49vw;
+  left: calc(50vw - 32px);
 }
 input[type='text']{
   width: 200px;
@@ -84,12 +84,6 @@ button[type='submit'].search{
   border-top-right-radius: 1rem ;
   border-bottom-right-radius: 1rem;
   border: none;
-}
-#load{
-  display: none;
-  position: absolute;
-  top: 17rem;
-  left: 58.2rem;
 }
 .weather-item{
   width: 16rem;
