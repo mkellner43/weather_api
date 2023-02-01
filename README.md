@@ -1,1 +1,3 @@
 # weather_api
+This project was created entirely using JavaScript DOM manipulation and webpack. The goal of this project was to get a better understanding of how to manipulate the DOM only using JS.
+I learned how to use webpack to compile my code as well! I was able to bundle and deploy this code to github pages! Check it out here: https://mkellner43.github.io/weather_api/ . I added features like location detection using the browers location API. I used a public weather API to gather weather data for a users location!
