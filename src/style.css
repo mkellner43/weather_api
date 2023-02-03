@@ -18,6 +18,9 @@ form{
   color: black;
   padding-bottom: 4rem;
 }
+input {
+  font-size: 16px;
+}
 input::placeholder{
   color: black;
 }
